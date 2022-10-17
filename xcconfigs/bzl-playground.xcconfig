@@ -1,0 +1,13 @@
+// Generated using xcconfig-extractor 0.6.1 by Toshihiro Suzuki - https://github.com/toshi0383/xcconfig-extractor
+SWIFT_EMIT_LOC_STRINGS = YES
+INFOPLIST_KEY_UIMainStoryboardFile = Main
+INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks
+INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+PRODUCT_BUNDLE_IDENTIFIER = io.1inch.bzl-playground
+INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
+INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+INFOPLIST_FILE = bzl-playground/Info.plist
+ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor
+

@@ -1,0 +1,7 @@
+// Generated using xcconfig-extractor 0.6.1 by Toshihiro Suzuki - https://github.com/toshi0383/xcconfig-extractor
+SWIFT_EMIT_LOC_STRINGS = NO
+PRODUCT_BUNDLE_IDENTIFIER = io.1inch.bzl-playgroundTests
+BUNDLE_LOADER = $(TEST_HOST)
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+TEST_HOST = $(BUILT_PRODUCTS_DIR)/bzl-playground.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bzl-playground
+
