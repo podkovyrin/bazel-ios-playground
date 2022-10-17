@@ -1,6 +1,7 @@
 name: bzl-playground
 
 options:
+  bundleIdPrefix: io.1inchtest
   developmentLanguage: en
   useBaseInternationalization: false
   deploymentTarget:
@@ -14,9 +15,9 @@ configs:
   Debug: debug
   Release: release
 
-configFiles:
-  Debug: xcconfigs/Debug.xcconfig
-  Release: xcconfigs/Release.xcconfig
+# configFiles:
+#   Debug: xcconfigs/Debug.xcconfig
+#   Release: xcconfigs/Release.xcconfig
 
 
 targets:
@@ -27,9 +28,9 @@ targets:
     sources:
       - path: bzl-playground
 
-    configFiles:
-      Debug: xcconfigs/bzl-playground-Debug.xcconfig
-      Release: xcconfigs/bzl-playground-Release.xcconfig
+    # configFiles:
+    #   Debug: xcconfigs/bzl-playground-Debug.xcconfig
+    #   Release: xcconfigs/bzl-playground-Release.xcconfig
 
   Tests:
     platform: iOS
@@ -41,9 +42,9 @@ targets:
     dependencies:
       - target: bzl-playground
 
-    configFiles:
-      Debug: xcconfigs/bzl-playgroundTests.xcconfig
-      Release: xcconfigs/bzl-playgroundTests.xcconfig
+    # configFiles:
+    #   Debug: xcconfigs/bzl-playgroundTests.xcconfig
+    #   Release: xcconfigs/bzl-playgroundTests.xcconfig
 
 
 schemes:
@@ -56,3 +57,4 @@ schemes:
       gatherCoverageData: true
       targets:
         - Tests
+        

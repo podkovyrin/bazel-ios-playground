@@ -29,34 +29,18 @@
 /* Begin PBXFileReference section */
 		11A4966238094FCE805A9FFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14FACEB040292BAED184BA5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1AAD1EC84E1F9B1F39DE29EE /* bzl-playgroundTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "bzl-playgroundTests.xcconfig"; sourceTree = "<group>"; };
 		24DD7BC2C0A3856893E6267B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2574C2DF22A234D127A05D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2868981B36B1344B1924AD0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3C071706E77D265A442FCB65 /* bzl-playground-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "bzl-playground-Debug.xcconfig"; sourceTree = "<group>"; };
 		3EED3675D7BEE1547C412872 /* bzl_playgroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bzl_playgroundTests.swift; sourceTree = "<group>"; };
-		7B578320E64D8D99E442DFCD /* bzl-playground-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "bzl-playground-Release.xcconfig"; sourceTree = "<group>"; };
 		B0B5C16193B42699AE8A9D6E /* bzl-playground.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "bzl-playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DA95AA8F8F705161771B81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD53ED161468E564B3CAF2F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BF8DB0C42AE2A2827B1728CC /* Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF8B8CAB7CF7E688226D6E52 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		FDBAF421F92763A6CFA1380A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FDDC533D6B90DEB9226C2490 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		0D44F43F40620D6D37D470C0 /* xcconfigs */ = {
-			isa = PBXGroup;
-			children = (
-				3C071706E77D265A442FCB65 /* bzl-playground-Debug.xcconfig */,
-				7B578320E64D8D99E442DFCD /* bzl-playground-Release.xcconfig */,
-				1AAD1EC84E1F9B1F39DE29EE /* bzl-playgroundTests.xcconfig */,
-				CF8B8CAB7CF7E688226D6E52 /* Debug.xcconfig */,
-				FDDC533D6B90DEB9226C2490 /* Release.xcconfig */,
-			);
-			path = xcconfigs;
-			sourceTree = "<group>";
-		};
 		767E9A3A42E61D6DBE96DD97 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				3EED3675D7BEE1547C412872 /* bzl_playgroundTests.swift */,
+				2574C2DF22A234D127A05D5C /* Info.plist */,
 			);
 			path = "bzl-playgroundTests";
 			sourceTree = "<group>";
@@ -93,7 +78,6 @@
 			children = (
 				BAF30F148716A9F9F902183A /* bzl-playground */,
 				AE2B481606C160A4819BBEE1 /* bzl-playgroundTests */,
-				0D44F43F40620D6D37D470C0 /* xcconfigs */,
 				767E9A3A42E61D6DBE96DD97 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -141,14 +125,6 @@
 			attributes = {
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					668112493E410E5B632E34FE = {
-						DevelopmentTeam = 6PMBQR35S8;
-						ProvisioningStyle = Automatic;
-					};
-					BC990B592133B9275375225E = {
-						DevelopmentTeam = 6PMBQR35S8;
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
 			buildConfigurationList = F188110D6564532931B3BD92 /* Build configuration list for PBXProject "bzl-playground" */;
@@ -233,61 +209,186 @@
 /* Begin XCBuildConfiguration section */
 		65D00D34721ECB56F538A8A5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B578320E64D8D99E442DFCD /* bzl-playground-Release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "bzl-playground/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.1inchtest.bzl-playground";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		6A6FAEA7A64382735A67EADF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDDC533D6B90DEB9226C2490 /* Release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		9769FCEF63B4355D10CD3D52 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AAD1EC84E1F9B1F39DE29EE /* bzl-playgroundTests.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "bzl-playgroundTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.1inchtest.Tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bzl-playground.app/bzl-playground";
 			};
 			name = Release;
 		};
 		C048C5157D11A51F4F872382 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C071706E77D265A442FCB65 /* bzl-playground-Debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "bzl-playground/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.1inchtest.bzl-playground";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		C23AC24C642BCE292B100774 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AAD1EC84E1F9B1F39DE29EE /* bzl-playgroundTests.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "bzl-playgroundTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.1inchtest.Tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bzl-playground.app/bzl-playground";
 			};
 			name = Debug;
 		};
 		DA3C17ED47B24938606B0831 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF8B8CAB7CF7E688226D6E52 /* Debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
