@@ -7,11 +7,20 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<string>en</string>
+	<!-- 
+	different name for Debug / Release build
+	https://github.com/bazelbuild/rules_apple/blob/master/doc/common_info.md#variable-substitution
+	
 	<key>CFBundleDisplayName</key>
 	<string>${BUNDLE_DISPLAY_NAME}</string>
+	 -->
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>UILaunchStoryboardName</key>
@@ -28,7 +37,11 @@
 					<key>UISceneConfigurationName</key>
 					<string>Default Configuration</string>
 					<key>UISceneDelegateClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<!-- 
+					PRODUCT_MODULE_NAME is not supported by bazel
+					https://github.com/bazelbuild/rules_apple/blob/master/doc/common_info.md#variable-substitution
+					 -->
+					<string>bzl-playground.SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
 					<string>Main</string>
 				</dict>
