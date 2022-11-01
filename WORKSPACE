@@ -1,10 +1,17 @@
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 http_archive(
-    name = "build_bazel_rules_apple",
-    sha256 = "90e3b5e8ff942be134e64a83499974203ea64797fd620eddeb71b3a8e1bff681",
-    url = "https://github.com/bazelbuild/rules_apple/releases/download/1.1.2/rules_apple.1.1.2.tar.gz",
+    name = "com_github_buildbuddy_io_rules_xcodeproj",
+    sha256 = "598449ff3a08972227363a55d22b54707468ecf4370ff56662f9d6026f72c7a7",
+    url = "https://github.com/buildbuddy-io/rules_xcodeproj/releases/download/0.10.1/release.tar.gz",
 )
+
+load(
+    "@com_github_buildbuddy_io_rules_xcodeproj//xcodeproj:repositories.bzl",
+    "xcodeproj_rules_dependencies",
+)
+
+xcodeproj_rules_dependencies()
 
 load(
     "@build_bazel_rules_apple//apple:repositories.bzl",

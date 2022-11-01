@@ -237,16 +237,4 @@ iOSInjectionProject/
 
 # Custom Rules
 
-# R.swift
-
-*.generated.swift
-
-# Secrets
-
-Keys.swift
-SnapshotsKeys.swift
-.gitsecret/keys/random_seed
-!*.secret
-
-# Bundled Resources
-OneInch/Resources/Caches/*.json
+**/*.xcodeproj/*
